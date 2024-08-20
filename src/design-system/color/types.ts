@@ -1,0 +1,117 @@
+export enum PaletteType {
+  'GREYS_100' = 'GREYS_100',
+  'GREYS_100_10' = 'GREYS_100_10',
+  'GREYS_100_20' = 'GREYS_100_20',
+  'GREYS_100_40' = 'GREYS_100_40',
+  'GREYS_100_50' = 'GREYS_100_50',
+  'GREYS_100_75' = 'GREYS_100_75',
+  'GREYS_200' = 'GREYS_200',
+  'GREYS_300' = 'GREYS_300',
+  'GREYS_400' = 'GREYS_400',
+  'GREYS_500' = 'GREYS_500',
+  'GREYS_600' = 'GREYS_600',
+  'GREYS_600_5' = 'GREYS_600_5',
+  'GREYS_600_10' = 'GREYS_600_10',
+  'GREYS_600_15' = 'GREYS_600_15',
+  'GREYS_600_30' = 'GREYS_600_30',
+  'GREYS_600_40' = 'GREYS_600_40',
+  'GREYS_600_60' = 'GREYS_600_60',
+
+  'PRIMARY_900' = 'PRIMARY_900',
+  'PRIMARY_800' = 'PRIMARY_800',
+  'PRIMARY_700' = 'PRIMARY_700',
+  'PRIMARY_600' = 'PRIMARY_600',
+  'PRIMARY_500' = 'PRIMARY_500',
+  'PRIMARY_400' = 'PRIMARY_400',
+  'PRIMARY_300' = 'PRIMARY_300',
+  'PRIMARY_200' = 'PRIMARY_200',
+  'PRIMARY_100' = 'PRIMARY_100',
+
+  'SECONDARY_900' = 'SECONDARY_900',
+  'SECONDARY_800' = 'SECONDARY_800',
+  'SECONDARY_700' = 'SECONDARY_700',
+  'SECONDARY_600' = 'SECONDARY_600',
+  'SECONDARY_500' = 'SECONDARY_500',
+  'SECONDARY_400' = 'SECONDARY_400',
+  'SECONDARY_300' = 'SECONDARY_300',
+  'SECONDARY_200' = 'SECONDARY_200',
+  'SECONDARY_100' = 'SECONDARY_100',
+
+  'WARNING_900' = 'WARNING_900',
+  'WARNING_800' = 'WARNING_800',
+  'WARNING_700' = 'WARNING_700',
+  'WARNING_600' = 'WARNING_600',
+  'WARNING_500' = 'WARNING_500',
+  'WARNING_400' = 'WARNING_400',
+  'WARNING_300' = 'WARNING_300',
+  'WARNING_200' = 'WARNING_200',
+  'WARNING_100' = 'WARNING_100',
+
+  'CAUTION_900' = 'CAUTION_900',
+  'CAUTION_800' = 'CAUTION_800',
+  'CAUTION_700' = 'CAUTION_700',
+  'CAUTION_600' = 'CAUTION_600',
+  'CAUTION_500' = 'CAUTION_500',
+  'CAUTION_400' = 'CAUTION_400',
+  'CAUTION_300' = 'CAUTION_300',
+  'CAUTION_200' = 'CAUTION_200',
+  'CAUTION_100' = 'CAUTION_100',
+
+  'SUCCESS_900' = 'SUCCESS_900',
+  'SUCCESS_800' = 'SUCCESS_800',
+  'SUCCESS_700' = 'SUCCESS_700',
+  'SUCCESS_600' = 'SUCCESS_600',
+  'SUCCESS_500' = 'SUCCESS_500',
+  'SUCCESS_400' = 'SUCCESS_400',
+  'SUCCESS_300' = 'SUCCESS_300',
+  'SUCCESS_200' = 'SUCCESS_200',
+  'SUCCESS_100' = 'SUCCESS_100',
+}
+
+export enum BackgroundPalette {
+  LIGHT_1 = 'LIGHT_1',
+  LIGHT_2 = 'LIGHT_2',
+  LIGHT_3 = 'LIGHT_3',
+
+  DARK_1 = 'DARK_1',
+  DARK_2 = 'DARK_2',
+  DARK_3 = 'DARK_3',
+}
+
+export enum TextPalette {
+  DARK_1 = 'DARK_1',
+  DARK_2 = 'DARK_2',
+  DARK_3 = 'DARK_3',
+
+  LIGHT_1 = 'LIGHT_1',
+  LIGHT_2 = 'LIGHT_2',
+  LIGHT_3 = 'LIGHT_3',
+}
+
+export enum FillPalette {
+  DARK_1 = 'DARK_1',
+  DARK_2 = 'DARK_2',
+  DARK_3 = 'DARK_3',
+
+  LIGHT_1 = 'LIGHT_1',
+  LIGHT_2 = 'LIGHT_2',
+  LIGHT_3 = 'LIGHT_3',
+}
+export enum StrokePalette {
+  DARK_1 = 'DARK_1',
+  DARK_2 = 'DARK_2',
+  DARK_3 = 'DARK_3',
+
+  LIGHT_1 = 'LIGHT_1',
+  LIGHT_2 = 'LIGHT_2',
+  LIGHT_3 = 'LIGHT_3',
+}
+
+//extension of the color palette
+export interface IColor {
+  palette: Record<PaletteType, string>;
+  background: Record<BackgroundPalette, string>;
+  text: Record<TextPalette, string>;
+  fill: Record<FillPalette, string>;
+  stroke: Record<StrokePalette, string>;
+}
